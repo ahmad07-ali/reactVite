@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+.navs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navicon i{
+    padding: 10px;
+}
+
+
+.side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidep {
+    font-family: 'Times New Roman', Times, serif;
+}
+.sideps {
+    font-size: 17px;
+    font-weight: 700;
+    color: green;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spec {
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sideicon {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+i {
+    opacity: 0.8;
+    color: black;
+}
+.imgg {
+    /* width: 350px;
+    height: 420px; */
+    
+    /* width: auto;
+    height: max-content; */
+    overflow: hidden;
+}
+.image-container {
+    
+    width: 100%;
+    /* max-width: 300px;
+    height: 400px; */
+    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.image-container img {
+    /* border: 3px solid red; */
+    
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    transform-origin: center;
+    transition: transform 5s ease-in-out;
+}
+
+.image-container:hover img {
+    transform: scale(1.3); /* Zoom effect */
+}
+
+.combine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contain {
+    display: grid;
+    
+    position: fixed;
+    width: 25%;
+}
+
+select {
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 7px;
+}
+
+.allbtn {
+    border: 1px solid black;
+    background-color: black;
+    border-bottom: none;
+    padding: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.allbtn:hover {
+    background-color: transparent;
+    color: black;
+
+}
+
+
+    
+.allbtn:active {
+    background-color: green;
+    color: white;
+}
+
+.vid {
+    height: 300px;
+    background-size: cover;
+}
+
+
+
+
+
+.subscribe {
+    display: flex;
+   /* align-items: center; */
+    justify-content: space-evenly; 
+    column-gap: 20px;
+    width: 100%;
+    gap: 20px;
+    margin-top: 5%;
+}
+
+input {
+     width: 150px; /*
+    margin-right: 400px; */
+    padding: 11px;
+}
+
+h5 {
+    text-align: center;
+}
+
+.btn2 {
+    background-color: transparent;
+    color: black;
+    position: absolute;
+    margin-left: 220px;
+    padding: 10px 25px 10px 25px;
+    border: 1px solid grey;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: background-color 0s 0.3s; 
+} 
+.btn2::after {
+    content: "SUBSCRIBE";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px 10px 25px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    transition: transform 0.2s ease-in-out;
+    transform-origin: right;
+}
+
+.btn2:hover::after {
+    transform: scaleX(0);
+}
+
+
+
+
+
+.all {
+    margin-bottom: 60px;
+}
+
+.btns {
+    text-align: center;
+}
+
+.mailbtn {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    position: relative;
+}
+
+.inp {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    padding: 11px;
+}
+
+.txts {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.txtt {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+li {
+    list-style: none;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* .content {
+    text-align: center;
+    width: 270px;
+} */
+
+.con {
+    z-index: 99;
+    background-color: white;
+}
+
+/*.two {
+    margin: 40px 40px;
+} */
+
+.three {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+
+.info {
+    display: flex;
+    align-items: baseline;  
+    justify-content: center;
+    gap: 5px;
+} 
+
+.four {
+    text-align: center;
+    margin-top: 50px;
+}
+
+select {
+    border: none;
+}
+
+
+
+ /* Page2 */
+ .boxes {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .info {
+    gap: 15px;
+}
+.paras {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page2 {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+    position: relative; /* ✅ Make it relative or remove entirely */
+  }
+  
+
+   .contents {
+    background-color: black;
+   }

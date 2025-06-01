@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .imggg {
+    width: 500px;
+    height: 500px;
+} */
+.new {
+    display:flex;
+    justify-content:space-evenly; 
+    height: 500px;
+    gap: 20px;
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.btn1 {
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    padding: 10px 25px;
+    border: 1px solid gray;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    overflow: hidden;
+    transition: background-color 0s 0.3s; 
+}
+ .btttn {
+    top: 75%;
+    left: 40%;
+ }   
+
+.btn1::after {
+    content: "SHOP NOW";
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    padding: 10px 25px 10px 25px;
+    background-color: white;
+    color: black;
+    transition: transform 0.2s ease-in;
+    transform-origin: right;
+}
+
+.btn1:hover::after {
+    transform: scaleX(0);
+}
+
+.twobtn {
+position: relative;
+overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
